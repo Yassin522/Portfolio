@@ -9,7 +9,7 @@ function Type() {
           "Computer Science student",
           "AI Developer",
           "Software Developer",
-          "Flutter Developer",
+          "Frontend Developer",
         ],
         autoStart: true,
         loop: true,

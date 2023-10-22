@@ -33,14 +33,14 @@ function Home2() {
                 <b className="purple">AI-driven Solutions </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Mobile apps.
+                  Mobile apps and Frontend development.
                 </b>
               </i>
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
+              with <b className="purple">React.js and Next.js.</b>
+              {/* <i>
                 <b className="purple">
                   {" "}
                   Modern Javascript Library and Frameworks
@@ -49,7 +49,7 @@ function Home2() {
               &nbsp; like
               <i>
                 <b className="purple"> React.js and Next.js</b>
-              </i>
+              </i> */}
             </p>
           </Col>
           <Col md={4} className="myAvtar">

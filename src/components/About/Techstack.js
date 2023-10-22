@@ -14,6 +14,7 @@ import {
   SiFirebase,
   SiFlutter,
   SiPytorch,
+  SiReact,
   SiScikitlearn,
   SiTensorflow,
 
@@ -61,6 +62,11 @@ function Techstack() {
       </Col>  <Col xs={4} md={2} className="tech-icons">
         <SiScikitlearn/>
       </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiReact/>
+      </Col>
+      
     </Row>
   );
 }

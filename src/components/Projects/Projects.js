@@ -36,7 +36,7 @@ function Projects() {
               isBlog={false}
               title="Sketchy"
               description="I have developed an innovative interactive web application designed with my team to facilitate drawing education for children. This system utilizes machine learning algorithms to predict and assist children in their drawing endeavors. Its primary objective is to provide an engaging and interactive learning experience that enables children to develop their artistic skills while receiving real-time feedback and support."
-              ghLink="https://github.com/Yassin522/Interactive-Drawing-Education-System-for-Children"
+              ghLink="https://github.com/Yassin522/Sketchy"
               demoLink="https://chatify-49.web.app/"
             />
           </Col>

@@ -21,7 +21,7 @@ function AboutCard() {
               <ImPointRight /> AI
             </li>
             <li className="about-activity">
-              <ImPointRight /> Mobile application developement
+              <ImPointRight /> Frontend developement
             </li>
             
           </ul>
@@ -29,7 +29,7 @@ function AboutCard() {
           <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Yassin</footer>
+         
         </blockquote>
       </Card.Body>
     </Card>
