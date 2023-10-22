@@ -37,7 +37,23 @@ function Projects() {
               title="Sketchy"
               description="I have developed an innovative interactive web application designed with my team to facilitate drawing education for children. This system utilizes machine learning algorithms to predict and assist children in their drawing endeavors. Its primary objective is to provide an engaging and interactive learning experience that enables children to develop their artistic skills while receiving real-time feedback and support."
               ghLink="https://github.com/Yassin522/Sketchy"
-              demoLink="https://chatify-49.web.app/"
+              demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={schoolmate}
+              isBlog={false}
+              title="SchoolMate"
+              description="The project is an Flutter application for the student, teacher and parents and also a web application for the administration to control all school data. The project contains four main roles (Student- Teacher-Manager-Parents).
+              The project was completed using:
+              Frontend: Flutter.
+              Backend: Firebase firestore.
+              
+              "
+              ghLink="https://github.com/Yassin522/SchoolMate-Dashboard"
+              demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_flutter-flutterdeveloper-firebase-activity-6965249047607541760-Fvin?utm_source=share&utm_medium=member_desktop"     
             />
           </Col>
 
@@ -48,7 +64,7 @@ function Projects() {
               title="Web page using Stramlit"
               description="I just tried to build a web page using the powerful Python library, Streamlit. This tool provides intuitive and interactive insights into complex data sets. The end result is a high-quality, web-based application that is accessible to users of all technical levels."
               ghLink="https://github.com/Yassin522/My-webpage-using-streamlit"
-              demoLink="https://blogs.soumya-jit.tech/"
+              // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
 
@@ -59,7 +75,7 @@ function Projects() {
               title="Heartbeat Categorization"
               description="This project is aimed at developing a machine learning model that can accurately classify heartbeats as either normal or abnormal. The model is trained on a dataset of ECG (electrocardiogram) signals, which were collected from patients and labeled by medical professionals."
               ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Heartbeat-Categorization"
-              demoLink="https://editor.soumya-jit.tech/"              
+              // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
@@ -70,7 +86,7 @@ function Projects() {
               title="Exploring the Evolution of Linux"
               description="Conducted an exploratory data analysis using Python and Pandas to understand the evolution of the Linux operating system."
               ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Exploring-the-Evolution-of-Linux"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
@@ -85,16 +101,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={schoolmate}
-              isBlog={false}
-              title="SchoolMate"
-              description="The project is an Flutter application for the student, teacher and parents and also a web application for the administration to control all school data"
-              ghLink="https://github.com/Yassin522/SchoolMate-Dashboard"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
+         
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={radio}
