@@ -1,7 +1,7 @@
 # Portfolio
 
 ## Introduction
-Welcome to my professional portfolio hosted on GitHub. This repository is a comprehensive display of my work, skills, and achievements in the field of [Your Field - e.g., software development, data science, etc.]. It is designed to provide a detailed overview of my professional journey and the projects I have undertaken.
+Welcome to my professional portfoli. This repository is a comprehensive display of my work, skills, and achievements in the field of data science. It is designed to provide a detailed overview of my professional journey and the projects I have undertaken.
 
 ## Contents
 - **Projects:** A collection of my most significant projects. Each project includes a brief description, key technologies used, and a link to the project repository.
