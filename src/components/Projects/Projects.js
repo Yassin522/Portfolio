@@ -15,6 +15,10 @@ import heart from "../../Assets/Projects/heart.jpeg";
 import linux from "../../Assets/Projects/linux.jpg";
 import schoolmate from "../../Assets/Projects/teacher mockup_014955.jpg";
 import radio from "../../Assets/Projects/Free Black Keyboard With Smartphone Mockup.jpg";
+import jigsaw from "../../Assets/Projects/photo_2023-12-24_10-25-35.jpg";
+import grammar from "../../Assets/Projects/301766776-a0b498e5-5f8e-4fb3-b53d-56f5f15543db.png";
+import ISS from "../../Assets/Projects/cover.jpg";
+import Textclass from "../../Assets/Projects/297351041-3b2721da-2df0-4f2f-a736-a1cf9f3a76d5.jpeg";
 
 
 
@@ -30,6 +34,33 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={jigsaw}
+              isBlog={false}
+              title="jigsaw genius"
+              description=" a sophisticated application designed to tackle jigsaw and grid puzzles using cutting-edge computer vision technology. It offers an intuitive and interactive experience, enabling users
+              to effortlessly upload puzzle images and receive accurate solutions. A standout feature allows
+              users to provide hint images for added assistance, particularly beneficial for intricate puzzles."
+              ghLink="https://github.com/Yassin522/jigsaw-genius"
+              demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_computervision-jigsaw-opencv-activity-7144589745954742272-UhvE?utm_source=share&utm_medium=member_desktop"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={grammar}
+              isBlog={false}
+              title="English Grammar Error Correction"
+              description=" This project focuses on the development of an English grammar error correction system using the T5 model and implementing an Encoder-Decoder architecture from scratch. The goal is to create a robust and efficient tool that can automatically detect and correct grammatical errors in written English text."
+              ghLink="https://github.com/Yassin522/English-Grammar-Error-Correction"
+              // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+            />
+          </Col>
+
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={drawing}
@@ -43,6 +74,30 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={Textclass}
+              isBlog={false}
+              title="Arabic Text Classification and Sequence Labeling"
+              description="This repository provides a collection of Python scripts for Arabic text classification and sequence labelling tasks. It includes a variety of models, including Naive Bayes and Logistic Regression as well as neural network models such as LSTMs and CNNs. The repository also includes a number of datasets for text classification and sequence labelling."
+              ghLink="https://github.com/Yassin522/Text-Classification-and-Sequence-Labelling"
+              // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ISS}
+              isBlog={false}
+              title="Information Security system project"
+              description=""
+              ghLink="https://github.com/Yassin522/ISS"
+              // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={schoolmate}
               isBlog={false}
               title="SchoolMate"
@@ -53,7 +108,7 @@ function Projects() {
               
               "
               ghLink="https://github.com/Yassin522/SchoolMate-Dashboard"
-              demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_flutter-flutterdeveloper-firebase-activity-6965249047607541760-Fvin?utm_source=share&utm_medium=member_desktop"     
+              demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_flutter-flutterdeveloper-firebase-activity-6965249047607541760-Fvin?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
 
@@ -64,7 +119,7 @@ function Projects() {
               title="Web page using Stramlit"
               description="I just tried to build a web page using the powerful Python library, Streamlit. This tool provides intuitive and interactive insights into complex data sets. The end result is a high-quality, web-based application that is accessible to users of all technical levels."
               ghLink="https://github.com/Yassin522/My-webpage-using-streamlit"
-              // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+            // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
 
@@ -75,7 +130,7 @@ function Projects() {
               title="Heartbeat Categorization"
               description="This project is aimed at developing a machine learning model that can accurately classify heartbeats as either normal or abnormal. The model is trained on a dataset of ECG (electrocardiogram) signals, which were collected from patients and labeled by medical professionals."
               ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Heartbeat-Categorization"
-              // demoLink="https://editor.soumya-jit.tech/"              
+            // demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
@@ -86,7 +141,7 @@ function Projects() {
               title="Exploring the Evolution of Linux"
               description="Conducted an exploratory data analysis using Python and Pandas to understand the evolution of the Linux operating system."
               ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Exploring-the-Evolution-of-Linux"
-              // demoLink="https://plant49-ai.herokuapp.com/"
+            // demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
@@ -97,11 +152,11 @@ function Projects() {
               title="Give Life: Predict Blood Donations"
               description="Built a machine learning model using Python and Scikit-learn to predict blood donation behavior of donors"
               ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Give%20Life_%20Predict%20Blood%20Donations"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+            // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
-         
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={radio}
@@ -109,7 +164,7 @@ function Projects() {
               title="Ai Radio"
               description="It is a radio player application that supports Syrian radio stations"
               ghLink="https://github.com/Yassin522/Flutter-ai-voice-assistant"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
         </Row>

@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in 
               <i>
-                <b className="purple"> C++, Python and Machine learning. </b>
+                <b className="purple"> Python, Machine learning and Opencv. </b>
               </i>
               <br />
               <br />
@@ -33,13 +33,13 @@ function Home2() {
                 <b className="purple">AI-driven Solutions </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Mobile apps and Frontend development.
+                  Frontend development.
                 </b>
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">React.js and Next.js.</b>
+              Committed to applying innovative solutions to realworld challenges
+              with <b className="purple">AI</b>
               {/* <i>
                 <b className="purple">
                   {" "}

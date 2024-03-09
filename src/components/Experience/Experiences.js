@@ -35,12 +35,18 @@ function Experiences() {
             <ExperienceCard
               imgPath={omdena}
               isBlog={false}
-              title="Junior ML Engineer "
-              description="Volunteer in Omdena Ile-de-France Chapter: Building a Conversational AI Chatbot for Alternative Transportation During Strikes in France.
+              title="Junior Data Scientist "
+              description="Contributed as a volunteer in the Omdena Ile-de-France Chapter, actively involved in the
+              development of Conversational AI Chatbot for Alternative Transportation during strikes in
+              France. Responsibilities included designing and implementing machine learning solutions to
+              enhance communication and accessibility during transportation disruptions.
+              Contributed as a volunteer in the Omdena Toronto Chapter, focusing on the Analyzing Brain
+Scan Images for the Early Detection and Diagnosis of Alzheimer's Disease project.
+
                
              "
 
-             date="Feb 2023- Present"
+              date="Feb 2023- Present"
             //   ghLink="https://github.com/Yassin522/Interactive-Drawing-Education-System-for-Children"
             //   demoLink="https://chatify-49.web.app/"
             />
@@ -51,10 +57,11 @@ function Experiences() {
               imgPath={shai}
               isBlog={false}
               title="Data Science Intern at SHAI For AI"
-              description="The Data Science Trainee will be responsible for: Assisting with data collection, cleaning and preparation, Building and testing predictive models, Developing data visualizations to communicate insights, Staying up-to-date with the latest advancements in data science and machine learning"
+              description="The Data Science Trainee responsible for: data collection, cleaning and preparation, Building and
+              testing predictive models, Developing data visualizations to communicate insights, Staying up-to-date with the latest advancements in data science and machine learning."
               date="Feb 2023- Present"
-          
-              //   ghLink="https://github.com/Yassin522/My-webpage-using-streamlit"
+
+            //   ghLink="https://github.com/Yassin522/My-webpage-using-streamlit"
             //   demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
@@ -64,26 +71,30 @@ function Experiences() {
               imgPath={in1minute}
               isBlog={false}
               title="Research Intern at In1Minute"
-              description="Overall, I am grateful for the opportunity to participate in the ResearchMate-2nd Season workshop and am honored to have received this Certificate of Recognition. I am confident that the skills and knowledge that I have gained through this workshop will be valuable assets in my professional development and future career endeavors."
+              description="•I seized the opportunity to engage with and glean insights from a diverse cohort of fellow
+              participants. This enriching experience involved collaborative efforts with professionals from
+              various backgrounds, fostering an exchange of ideas and perspectives that has significantly
+              contributed to my personal and professional growth.
+              "
               date="Oct 2022- Nov 2022"
-           
-              //   ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Heartbeat-Categorization"
+
+            //   ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Heartbeat-Categorization"
             //   demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ExperienceCard
               imgPath={shellcode}
               isBlog={false}
               title="ShellCode Solution FLutter intern"
               description="IT Services and IT Consulting. Work was done for a month on an application to manage a whole hotel and flutter were used to implement this project."
               date="July 2022- Aug 2022"
-           
-              //   ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Exploring-the-Evolution-of-Linux"
+
+            //   ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Exploring-the-Evolution-of-Linux"
             //   demoLink="https://plant49-ai.herokuapp.com/"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ExperienceCard
@@ -94,10 +105,10 @@ function Experiences() {
               Ranked 19th in the 2022 ICPC Damascus University Collegiate Programming Contest.
               146th place among more than 400 participating teams in The 2021 ACPC Kickoff Online Individual Contest.
               232th place among more than 400 participating teams in The 2022 ACPC Kickoff Online Individual Contest."
-          
+
               date="Jan 2021- Present"
-              //   ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Give%20Life_%20Predict%20Blood%20Donations"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+            //   ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Give%20Life_%20Predict%20Blood%20Donations"
+            // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
@@ -108,12 +119,12 @@ function Experiences() {
               title="Tutor at RBCs Team"
               description="Red Blood Cells Team (RBCs) is an educational voluntary team of academic youth, working towards the growth and development of the Syrian society and University students, providing them with the best educational academic materials, online and offline."
               date="Feb 2021- Present"
-          
-              //   ghLink="https://github.com/Yassin522/SchoolMate-Dashboard"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+
+            //   ghLink="https://github.com/Yassin522/SchoolMate-Dashboard"
+            // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
-        
+
         </Row>
       </Container>
     </Container>

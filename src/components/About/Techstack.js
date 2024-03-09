@@ -14,6 +14,7 @@ import {
   SiChatbot,
   SiFirebase,
   SiFlutter,
+  SiOpencv,
   SiPytorch,
   SiReact,
   SiScikitlearn,
@@ -31,7 +32,7 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
-    
+
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
@@ -54,24 +55,18 @@ function Techstack() {
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiTensorflow/>
+        <SiTensorflow />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPytorch/>
+        <SiPytorch />
       </Col>  <Col xs={4} md={2} className="tech-icons">
-        <SiScikitlearn/>
+        <SiScikitlearn />
       </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiReact/>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiChatbot/>
-      </Col>
-
-    
       
+      <Col xs={4} md={2} className="tech-icons">
+        <SiOpencv />
+      </Col>
+
     </Row>
   );
 }
