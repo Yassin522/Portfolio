@@ -11,6 +11,7 @@ import {
   DiDart,
 } from "react-icons/di";
 import {
+  SiChatbot,
   SiFirebase,
   SiFlutter,
   SiPytorch,
@@ -63,6 +64,10 @@ function Techstack() {
 
       <Col xs={4} md={2} className="tech-icons">
         <SiReact/>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiChatbot/>
       </Col>
 
     
