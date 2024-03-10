@@ -89,7 +89,7 @@ function Projects() {
               imgPath={ISS}
               isBlog={false}
               title="Information Security system project"
-              description=""
+              description="This project aims to develop a system that facilitates communication between Damascus University and its students and doctors. The system utilizes a client-server model, consisting of a central server for the university and separate client applications (browsers) for students and doctors. The communication between clients and the server relies on sockets over an IP/TCP connection."
               ghLink="https://github.com/Yassin522/ISS"
               // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
