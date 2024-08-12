@@ -6,12 +6,25 @@ import { BsGithub } from "react-icons/bs";
 
 function ExperienceCards(props) {
   return (
-    <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+    <Card className="project-card-view" style={{ maxWidth: '40rem', height: '50rem' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '14rem' }}>
+        <Card.Img
+          variant="top"
+          src={props.imgPath}
+          alt="card-img"
+          style={{ width: '70%', height: 'auto', objectFit: 'contain' }}
+        />
+      </div>
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+        <Card.Title style={{ fontSize: '0.95rem', whiteSpace: 'pre-line' }}>{props.title}</Card.Title>
+        <Card.Text style={{ fontSize: '0.8rem', textAlign: "justify" }}>
+          {props.description.split('.').map((sentence, index) => (
+            <React.Fragment key={index}>
+              {sentence.trim()}
+              {sentence && '.'}
+              <br />
+            </React.Fragment>
+          ))}
         </Card.Text>
 
         <Card.Text >{props.date} </Card.Text>
@@ -32,7 +45,7 @@ function ExperienceCards(props) {
             style={{ marginLeft: "10px" }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            {"Website"}
           </Button>
         )}
       </Card.Body>

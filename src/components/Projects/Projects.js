@@ -56,7 +56,7 @@ function Projects() {
               title="English Grammar Error Correction"
               description=" This project focuses on the development of an English grammar error correction system using the T5 model and implementing an Encoder-Decoder architecture from scratch. The goal is to create a robust and efficient tool that can automatically detect and correct grammatical errors in written English text."
               ghLink="https://github.com/Yassin522/English-Grammar-Error-Correction"
-              // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+            // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
 
@@ -68,7 +68,7 @@ function Projects() {
               title="Sketchy"
               description="I have developed an innovative interactive web application designed with my team to facilitate drawing education for children. This system utilizes machine learning algorithms to predict and assist children in their drawing endeavors. Its primary objective is to provide an engaging and interactive learning experience that enables children to develop their artistic skills while receiving real-time feedback and support."
               ghLink="https://github.com/Yassin522/Sketchy"
-              demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+              demoLink="https://sketchy-ten.vercel.app/"
             />
           </Col>
 
@@ -79,7 +79,7 @@ function Projects() {
               title="Arabic Text Classification and Sequence Labeling"
               description="This repository provides a collection of Python scripts for Arabic text classification and sequence labelling tasks. It includes a variety of models, including Naive Bayes and Logistic Regression as well as neural network models such as LSTMs and CNNs. The repository also includes a number of datasets for text classification and sequence labelling."
               ghLink="https://github.com/Yassin522/Text-Classification-and-Sequence-Labelling"
-              // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+            // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
 
@@ -91,7 +91,7 @@ function Projects() {
               title="Information Security system project"
               description="This project aims to develop a system that facilitates communication between Damascus University and its students and doctors. The system utilizes a client-server model, consisting of a central server for the university and separate client applications (browsers) for students and doctors. The communication between clients and the server relies on sockets over an IP/TCP connection."
               ghLink="https://github.com/Yassin522/ISS"
-              // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
+            // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
 
@@ -112,7 +112,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={streamlit}
               isBlog={false}
@@ -143,9 +143,9 @@ function Projects() {
               ghLink="https://github.com/Yassin522/Data-Sceince-Projects/tree/main/Exploring-the-Evolution-of-Linux"
             // demoLink="https://plant49-ai.herokuapp.com/"
             />
-          </Col>
+          </Col> */}
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={blood}
               isBlog={false}
@@ -166,7 +166,7 @@ function Projects() {
               ghLink="https://github.com/Yassin522/Flutter-ai-voice-assistant"
             // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
