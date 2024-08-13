@@ -53,7 +53,7 @@ function Experiences() {
             <ExperienceCard
               imgPath={omdena}
               isBlog={false}
-              title="Junior Data Scientist "
+              title="Junior Data Scientist at omdena"
               description="• Contributed as a volunteer in the Omdena Ile-de-France Chapter, actively involved in the
 development of Conversational AI Chatbot for Alternative Transportation during strikes in
 France Responsibilities included designing and implementing machine learning solutions to

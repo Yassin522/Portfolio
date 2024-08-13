@@ -16,8 +16,8 @@ function ExperienceCards(props) {
         />
       </div>
       <Card.Body>
-        <Card.Title style={{ fontSize: '0.95rem', whiteSpace: 'pre-line' }}>{props.title}</Card.Title>
-        <Card.Text style={{ fontSize: '0.8rem', textAlign: "justify" }}>
+        <Card.Title style={{ fontSize: '0.9rem', whiteSpace: 'pre-line' , color: 'violet'}}>{props.title}</Card.Title>
+        <Card.Text style={{ fontSize: '0.8rem', textAlign: "start" }}>
           {props.description.split('.').map((sentence, index) => (
             <React.Fragment key={index}>
               {sentence.trim()}

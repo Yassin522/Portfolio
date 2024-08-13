@@ -40,11 +40,25 @@ function Projects() {
               imgPath={jigsaw}
               isBlog={false}
               title="jigsaw genius"
-              description=" a sophisticated application designed to tackle jigsaw and grid puzzles using cutting-edge computer vision technology. It offers an intuitive and interactive experience, enabling users
-              to effortlessly upload puzzle images and receive accurate solutions. A standout feature allows
-              users to provide hint images for added assistance, particularly beneficial for intricate puzzles."
+              description=" • a sophisticated application designed to tackle jigsaw and grid puzzles using cutting-edge computer vision technology. 
+              • It offers an intuitive and interactive experience, enabling users
+              to effortlessly upload puzzle images and receive accurate solutions. 
+              • A standout feature allows users to provide hint images for added assistance, particularly beneficial for intricate puzzles."
               ghLink="https://github.com/Yassin522/jigsaw-genius"
               demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_computervision-jigsaw-opencv-activity-7144589745954742272-UhvE?utm_source=share&utm_medium=member_desktop"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={drawing}
+              isBlog={false}
+              title="Sketchy"
+              description="• I have developed an innovative interactive web application designed with my team to facilitate drawing education for children.
+              • This system utilizes machine learning algorithms to predict and assist children in their drawing endeavors.
+              • Its primary objective is to provide an engaging and interactive learning experience that enables children to develop their artistic skills while receiving real-time feedback and support."
+              ghLink="https://github.com/Yassin522/Sketchy"
+              demoLink="https://sketchy-ten.vercel.app/"
             />
           </Col>
 
@@ -54,30 +68,24 @@ function Projects() {
               imgPath={grammar}
               isBlog={false}
               title="English Grammar Error Correction"
-              description=" This project focuses on the development of an English grammar error correction system using the T5 model and implementing an Encoder-Decoder architecture from scratch. The goal is to create a robust and efficient tool that can automatically detect and correct grammatical errors in written English text."
+              description="• This project focuses on the development of an English grammar error correction system using the T5 model and implementing an Encoder-Decoder architecture from scratch.
+               • The goal is to create a robust and efficient tool that can automatically detect and correct grammatical errors in written English text."
               ghLink="https://github.com/Yassin522/English-Grammar-Error-Correction"
             // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
           </Col>
 
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={drawing}
-              isBlog={false}
-              title="Sketchy"
-              description="I have developed an innovative interactive web application designed with my team to facilitate drawing education for children. This system utilizes machine learning algorithms to predict and assist children in their drawing endeavors. Its primary objective is to provide an engaging and interactive learning experience that enables children to develop their artistic skills while receiving real-time feedback and support."
-              ghLink="https://github.com/Yassin522/Sketchy"
-              demoLink="https://sketchy-ten.vercel.app/"
-            />
-          </Col>
+          
 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Textclass}
               isBlog={false}
               title="Arabic Text Classification and Sequence Labeling"
-              description="This repository provides a collection of Python scripts for Arabic text classification and sequence labelling tasks. It includes a variety of models, including Naive Bayes and Logistic Regression as well as neural network models such as LSTMs and CNNs. The repository also includes a number of datasets for text classification and sequence labelling."
+              description="• This repository provides a collection of Python scripts for Arabic text classification and sequence labelling tasks.
+              • It includes a variety of models, including Naive Bayes and Logistic Regression as well as neural network models such as LSTMs and CNNs.
+              • The repository also includes a number of datasets for text classification and sequence labelling."
               ghLink="https://github.com/Yassin522/Text-Classification-and-Sequence-Labelling"
             // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
@@ -89,7 +97,9 @@ function Projects() {
               imgPath={ISS}
               isBlog={false}
               title="Information Security system project"
-              description="This project aims to develop a system that facilitates communication between Damascus University and its students and doctors. The system utilizes a client-server model, consisting of a central server for the university and separate client applications (browsers) for students and doctors. The communication between clients and the server relies on sockets over an IP/TCP connection."
+              description="• This project aims to develop a system that facilitates communication between Damascus University and its students and doctors.
+              • The system utilizes a client-server model, consisting of a central server for the university and separate client applications (browsers) for students and doctors.
+              • The communication between clients and the server relies on sockets over an IP/TCP connection."
               ghLink="https://github.com/Yassin522/ISS"
             // demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_machinelearning-neuralnetworks-knn-activity-7100933861504614401-ZVSi?utm_source=share&utm_medium=member_desktop"
             />
@@ -101,11 +111,9 @@ function Projects() {
               imgPath={schoolmate}
               isBlog={false}
               title="SchoolMate"
-              description="The project is an Flutter application for the student, teacher and parents and also a web application for the administration to control all school data. The project contains four main roles (Student- Teacher-Manager-Parents).
-              The project was completed using:
-              Frontend: Flutter.
-              Backend: Firebase firestore.
-              
+              description="• The project is an Flutter application for the student, teacher and parents and also a web application for the administration to control all school data.
+              • The project contains four main roles (Student- Teacher-Manager-Parents).
+              • The project was completed using: Frontend: Flutter and Backend: Firebase firestore.
               "
               ghLink="https://github.com/Yassin522/SchoolMate-Dashboard"
               demoLink="https://www.linkedin.com/posts/yassin-abdulmahdi_flutter-flutterdeveloper-firebase-activity-6965249047607541760-Fvin?utm_source=share&utm_medium=member_desktop"
