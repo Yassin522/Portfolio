@@ -19,6 +19,7 @@ import jigsaw from "../../Assets/Projects/photo_2023-12-24_10-25-35.jpg";
 import grammar from "../../Assets/Projects/301766776-a0b498e5-5f8e-4fb3-b53d-56f5f15543db.png";
 import ISS from "../../Assets/Projects/cover.jpg";
 import Textclass from "../../Assets/Projects/297351041-3b2721da-2df0-4f2f-a736-a1cf9f3a76d5.jpeg";
+import fluent from "../../Assets/Projects/onboard_2.png";
 
 
 
@@ -34,6 +35,24 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={fluent}
+              isBlog={false}
+              title="FluentFlow"
+              description="
+              • Bachelor's Degree Project in Information Technology Engineering - Artificial Intelligence Department.
+              • Developed a web application to assist users in enhancing public speaking skills by evaluating performance across various criteria such as body language, voice modulation, and speech content. 
+              • Performance Evaluation: The app assesses users' public speaking skills across multiple criteria: Body Movement and Language: Analyzes gestures, posture, head gaze, and eye gaze to provide insights into non-verbal communication also Voice Analysis: Measures aspects such as speed, vocal variation, pauses, and filler words to
+improve speech delivery and Script and Language Evaluation: Examines the script's content, language variation, and
+overall coherence.
+             "
+             
+              demoLink="https://drive.google.com/file/d/1QMHhLBDc0VJzFy7Cy1K0D_bvz1YaYUG-/view?usp=sharing"
+            />
+          </Col>
+
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -76,7 +95,7 @@ function Projects() {
           </Col>
 
 
-          
+
 
           <Col md={4} className="project-card">
             <ProjectCard

@@ -63,7 +63,7 @@ Scan Images for the Early Detection and Diagnosis of Alzheimer's Disease project
 
              "
 
-              date="Feb 2023- Present"
+              date="May 2023- Present"
               //   ghLink="https://github.com/Yassin522/Interactive-Drawing-Education-System-for-Children"
               demoLink="https://www.omdena.com/"
             />
