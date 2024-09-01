@@ -16,7 +16,9 @@ function ProjectCards(props) {
         />
       </div>
       <Card.Body>
-      <Card.Title style={{ fontSize: '0.95rem', whiteSpace: 'pre-line' , color: 'violet'}}>{props.title}</Card.Title>
+        <Card.Title style={{ fontSize: '0.95rem', whiteSpace: 'pre-line', color: 'violet' }}>
+          {props.title}
+        </Card.Title>
         <Card.Text style={{ fontSize: '0.8rem', textAlign: "start" }}>
           {props.description.split('.').map((sentence, index) => (
             <React.Fragment key={index}>
@@ -26,16 +28,17 @@ function ProjectCards(props) {
             </React.Fragment>
           ))}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+        {/* Conditionally render GitHub link if provided */}
+        {props.ghLink && (
+          <Button variant="primary" href={props.ghLink} target="_blank">
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
+          </Button>
+        )}
 
-        {!props.isBlog && props.demoLink && (
+        {/* Conditionally render Demo link if provided */}
+        {props.demoLink && !props.isBlog && (
           <Button
             variant="primary"
             href={props.demoLink}
@@ -50,4 +53,5 @@ function ProjectCards(props) {
     </Card>
   );
 }
+
 export default ProjectCards;

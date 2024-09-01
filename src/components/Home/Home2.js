@@ -19,10 +19,10 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Highly motivated and skilled Information Technology Engineering student with hands-on experience
+              Highly motivated and skilled Computer Science Graduate with hands-on experience
               in Data Science and Machine Learning
               <br />
-              <br />I am fluent in 
+              <br />I am fluent in
               <i>
                 <b className="purple"> Python, Machine learning and Opencv. </b>
               </i>
@@ -75,7 +75,7 @@ function Home2() {
                   <AiFillGithub />
                 </a>
               </li>
-           
+
               <li className="social-icons">
                 <a
                   href="https://www.linkedin.com/in/yassin-abdulmahdi/"
@@ -86,16 +86,7 @@ function Home2() {
                   <FaLinkedinIn />
                 </a>
               </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/yassin-abdulmahdi/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
+
 
               <li className="social-icons">
                 <a
@@ -118,7 +109,7 @@ function Home2() {
                   <FaMedium />
                 </a>
               </li>
-         
+
             </ul>
           </Col>
         </Row>
