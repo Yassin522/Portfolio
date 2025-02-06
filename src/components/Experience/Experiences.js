@@ -17,7 +17,7 @@ import shellcode from "../../Assets/Experiences/photo_2022-09-06_22-02-04.jpg";
 import ICPC from "../../Assets/Experiences/p4755.jpg";
 import rbcs from "../../Assets/Experiences/photo_2021-10-05_12-37-55.jpg";
 import seventh from "../../Assets/Experiences/seventhgeneration.png";
-
+import rachis from "../../Assets/Experiences/photo_2024-07-01_11-19-54.jpg";
 
 function Experiences() {
   return (
@@ -33,6 +33,25 @@ function Experiences() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
 
+
+
+        <Col md={4} className="project-card">
+            <ExperienceCard
+              imgPath={rachis}
+              isBlog={false}
+              title="Research And Development Engineer at Rachis Systems Sdn. Bhd"
+              description={`• Designed and implemented a comprehensive federated learning framework, integrating proprietary algorithms and benchmark methodologies for robust comparative analysis.
+                   • Contributed to the development and optimization of an advanced iris recognition system, improving accuracy and reliability..
+                • Leveraged meta-learning techniques to address vehicle routing problems with time windows, driving significant operational enhancements.
+                    • Collaborated with cross-functional teams to deliver innovative machine learning solutions tailored
+to practical,  real-world challenges.
+                   `
+                  }
+              date="Oct 2024 – present"
+
+              demoLink="https://rachis.co/"
+            />
+          </Col>
 
           <Col md={4} className="project-card">
             <ExperienceCard

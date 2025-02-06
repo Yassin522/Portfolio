@@ -19,9 +19,9 @@ function AboutCard() {
             <li className="about-activity">
               <ImPointRight /> AI
             </li>
-            <li className="about-activity">
+            {/* <li className="about-activity">
               <ImPointRight /> Frontend developement
-            </li>
+            </li> */}
 
           </ul>
 

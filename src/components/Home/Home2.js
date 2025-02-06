@@ -20,7 +20,7 @@ function Home2() {
             </h1>
             <p className="home-about-body">
               Highly motivated and skilled Computer Science Graduate with hands-on experience
-              in Data Science and Machine Learning
+              in Data Science
               <br />
               <br />I am fluent in
               <i>
@@ -30,11 +30,7 @@ function Home2() {
               <br />
               My field of Interest's are building new &nbsp;
               <i>
-                <b className="purple">AI-driven Solutions </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Frontend development.
-                </b>
+                <b className="purple">AI-driven Solutions </b> 
               </i>
               <br />
               <br />
