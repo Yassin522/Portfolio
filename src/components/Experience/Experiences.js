@@ -18,6 +18,8 @@ import ICPC from "../../Assets/Experiences/p4755.jpg";
 import rbcs from "../../Assets/Experiences/photo_2021-10-05_12-37-55.jpg";
 import seventh from "../../Assets/Experiences/seventhgeneration.png";
 import rachis from "../../Assets/Experiences/photo_2024-07-01_11-19-54.jpg";
+import tp from "../../Assets/Experiences/truepositive_tech_logo.jpeg";
+
 
 function Experiences() {
   return (
@@ -33,6 +35,33 @@ function Experiences() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
 
+        <Col md={4} className="project-card">
+            <ExperienceCard
+              imgPath={tp}
+              isBlog={false}
+              title="Data Scientist at TruePositive"
+              description={`
+                • Performed Exploratory Data Analysis (EDA) on subscriber activity and revenue data to uncover churn
+                        drivers and usage behavior patterns.
+
+                • Delivered Drip, RFM, Growth, and GEO analyses for MTN Congo.
+               • Worked extensively with the SDP schema, integrating data from subscriber demographics, service
+                    engagement snapshots, bundle subscriptions, and revenue facts to create a customer view for
+                    advanced analytics.
+                • Built interactive dashboards with Apache Superset, giving client teams real-time visibility into KPIs
+and growth opportunities.
+
+                • Social Network Analysis pipeline on large-scale telecom data, reducing processing time by 90%
+through migration from PySpark to DuckDB.
+
+                • Collaborated on projects involving Large Language Models (LLMs).
+                   `
+                  }
+              date="Feb 2025 – present"
+
+              demoLink="https://www.linkedin.com/company/truepositive-tech/posts/?feedView=all"
+            />
+          </Col>
 
 
         <Col md={4} className="project-card">
@@ -40,14 +69,14 @@ function Experiences() {
               imgPath={rachis}
               isBlog={false}
               title="Research And Development Engineer at Rachis Systems Sdn. Bhd"
-              description={`• Designed and implemented a comprehensive federated learning framework, integrating proprietary algorithms and benchmark methodologies for robust comparative analysis.
-                   • Contributed to the development and optimization of an advanced iris recognition system, improving accuracy and reliability..
-                • Leveraged meta-learning techniques to address vehicle routing problems with time windows, driving significant operational enhancements.
-                    • Collaborated with cross-functional teams to deliver innovative machine learning solutions tailored
-to practical,  real-world challenges.
+              description={`•  Built a federated learning framework with adaptive differential privacy and client clustering,
+boosting model accuracy to 98.7% on MNIST data.
+                   • Enhanced an iris recognition system by improving accuracy and reliability.
+                • Applied meta-learning to optimize vehicle routing with time windows.
+                    • Collaborated with the team to solve real-world ML problems.
                    `
                   }
-              date="Oct 2024 – present"
+              date="Oct 2024 – Mar 2025"
 
               demoLink="https://rachis.co/"
             />

@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in
               <i>
-                <b className="purple"> Python, Machine learning and Opencv. </b>
+                <b className="purple"> Python, Machine learning and Data Analysis. </b>
               </i>
               <br />
               <br />

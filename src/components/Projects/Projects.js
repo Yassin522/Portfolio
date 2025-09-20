@@ -48,7 +48,7 @@ function Projects() {
 improve speech delivery and Script and Language Evaluation: Examines the script's content, language variation, and
 overall coherence.
              "
-             
+              ghLink="https://github.com/Yassin522/Fluent-Flow"
               demoLink="https://drive.google.com/file/d/1QMHhLBDc0VJzFy7Cy1K0D_bvz1YaYUG-/view?usp=sharing"
             />
           </Col>
