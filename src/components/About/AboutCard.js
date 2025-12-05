@@ -10,7 +10,9 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Yassin Abdulmahdi </span>
             from <span className="purple"> Damascus, Syria.</span>
-            <br /> I recently graduated with a Bachelor's degree in Information Technology Engineering from Damascus University.
+            <br /> Data Scientist and Informatics Engineering graduate from Damascus University with hands-on
+experience in AI, machine learning, and data-driven problem-solving. Skilled at building innovative
+solutions, I specialize in turning complex challenges into impactful, real-world applications
 
             <br />
             I am open to work in any opportunity related to

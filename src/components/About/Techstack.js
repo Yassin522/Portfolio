@@ -4,69 +4,79 @@ import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
   DiReact,
-  DiNodejs,
-  DiPython,
   DiGit,
-  DiJava,
   DiDart,
+  DiPython,
 } from "react-icons/di";
 import {
-  SiChatbot,
-  SiFirebase,
   SiFlutter,
   SiOpencv,
   SiPytorch,
-  SiReact,
   SiScikitlearn,
   SiTensorflow,
-
+  SiDocker,
+  SiDjango,
+  SiPandas,
+  SiPostgresql,
+  SiNumpy,          // Added for Data Analysis
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      {/* --- Languages --- */}
       <Col xs={4} md={2} className="tech-icons">
         <CgCPlusPlus />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <DiPython /> 
       </Col>
 
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiDart />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiFlutter />
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
+      {/* --- Data Science, AI & LLM --- */}
       <Col xs={4} md={2} className="tech-icons">
         <SiTensorflow />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPytorch />
-      </Col>  <Col xs={4} md={2} className="tech-icons">
+      </Col>  
+      <Col xs={4} md={2} className="tech-icons">
         <SiScikitlearn />
       </Col>
-      
       <Col xs={4} md={2} className="tech-icons">
         <SiOpencv />
       </Col>
+ 
+  
 
+      {/* --- Data Analysis & Big Data --- */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPandas />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNumpy />
+      </Col>
+     
+
+      {/* --- Web & Tools --- */}
+      <Col xs={4} md={2} className="tech-icons">
+        <DiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFlutter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDjango /> 
+      </Col>
+      
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiGit />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPostgresql />
+      </Col>
     </Row>
   );
 }
