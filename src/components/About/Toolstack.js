@@ -2,9 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
   SiVisualstudiocode,
-  SiPostman,
   SiGooglecolab,
-
 } from "react-icons/si";
 
 function Toolstack() {
