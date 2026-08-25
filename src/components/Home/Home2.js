@@ -20,23 +20,37 @@ function Home2() {
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
               <p className="home-about-body">
-                Highly motivated and skilled Computer Science Graduate with hands-on experience
-                in Data Science
+                I am an <b className="purple">AI Engineer</b> and{" "}
+                <b className="purple">Data Scientist</b>, currently leading AI
+                product delivery at <b className="purple">BeSmart.ai</b>.
                 <br />
-                <br />I am fluent in
+                <br />
+                I take LLM systems all the way to production, from
                 <i>
-                  <b className="purple"> Python, Machine learning and Data Analysis. </b>
+                  <b className="purple">
+                    {" "}
+                    RAG pipelines and agent platforms{" "}
+                  </b>
                 </i>
+                to the API layer, containers, and release.
                 <br />
                 <br />
-                My field of Interest's are building new &nbsp;
+                My daily stack is
                 <i>
-                  <b className="purple">AI-driven Solutions </b>
+                  <b className="purple">
+                    {" "}
+                    Python, FastAPI, PyTorch, LangChain, Qdrant and Docker,{" "}
+                  </b>
                 </i>
+                and on the data side
+                <i>
+                  <b className="purple"> DuckDB, PySpark and SQL </b>
+                </i>
+                over multi-million-record datasets.
                 <br />
                 <br />
-                Committed to applying innovative solutions to real-world challenges
-                with <b className="purple">AI</b>
+                I build <b className="purple">AI products that ship</b>, not
+                demos.
               </p>
             </div>
           </Col>

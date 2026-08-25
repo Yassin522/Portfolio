@@ -10,13 +10,23 @@ import ISS from "../../Assets/Projects/cover.jpg";
 import Textclass from "../../Assets/Projects/297351041-3b2721da-2df0-4f2f-a736-a1cf9f3a76d5.jpeg";
 import fluent from "../../Assets/Projects/onboard_2.png";
 import schoolmate from "../../Assets/Projects/teacher mockup_014955.jpg";
+import invoice from "../../Assets/Projects/Free Black Keyboard With Smartphone Mockup.jpg";
 
 const projects = [
+  {
+    imgPath: invoice,
+    title: "Intelligent Invoice Extraction & RAG",
+    description:
+      "End-to-end ETL and RAG pipeline that extracts and structures line-item data from unstructured PDF invoices. Docling handles high-precision table extraction, LanceDB indexes serialized rows for semantic search, and Llama-3 synthesizes grounded answers so users can query invoice details in natural language.",
+    ghLink:
+      "https://github.com/Yassin522/Intelligent-Invoice-Line-Items-Extraction-Retrieval-System",
+    techStack: ["Python", "RAG", "Llama-3", "LanceDB", "Docling"],
+  },
   {
     imgPath: fluent,
     title: "FluentFlow",
     description:
-      "Bachelor's Degree Project in AI Engineering. A web app that evaluates public speaking skills across body language, voice modulation, and speech content — providing real-time multi-criteria feedback.",
+      "Bachelor's Degree Project in AI Engineering. A web app that evaluates public speaking skills across body language, voice modulation, and speech content, providing real-time multi-criteria feedback.",
     ghLink: "https://github.com/Yassin522/Fluent-Flow",
     demoLink: "https://drive.google.com/file/d/1QMHhLBDc0VJzFy7Cy1K0D_bvz1YaYUG-/view?usp=sharing",
     techStack: ["Python", "Computer Vision", "NLP", "React", "MediaPipe"],
@@ -51,7 +61,7 @@ const projects = [
     imgPath: Textclass,
     title: "Arabic Text Classification",
     description:
-      "Arabic text classification and sequence labeling using Naive Bayes, Logistic Regression, LSTMs, and CNNs — with multiple Arabic NLP datasets included.",
+      "Arabic text classification and sequence labeling using Naive Bayes, Logistic Regression, LSTMs, and CNNs, with multiple Arabic NLP datasets included.",
     ghLink: "https://github.com/Yassin522/Text-Classification-and-Sequence-Labelling",
     techStack: ["Python", "LSTM", "CNN", "Scikit-learn", "Arabic NLP"],
   },

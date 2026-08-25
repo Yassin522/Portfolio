@@ -21,23 +21,18 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> Yassin Abdulmahdi</strong>
+                I'm{" "}
+                <strong className="main-name">Yassin Abdulmahdi</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div className="home-type">
                 <Type />
               </div>
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20, display: "flex", alignItems: "center", justifyContent: "center" }} className="fade-in-right">
               <div className="hero-img-frame">
-                <img
-                  src={homeLogo}
-                  alt="home pic"
-                  className="img-fluid"
-                  style={{ maxHeight: "450px", display: "block" }}
-                />
+                <img src={homeLogo} alt="Yassin Abdulmahdi" />
               </div>
             </Col>
           </Row>

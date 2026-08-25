@@ -11,16 +11,30 @@ import seventh from "../../Assets/Experiences/seventhgeneration.png";
 import rachis from "../../Assets/Experiences/photo_2024-07-01_11-19-54.jpg";
 import tp from "../../Assets/Experiences/truepositive_tech_logo.jpeg";
 import ASPU from "../../Assets/Experiences/ASPU-Logo-1.png";
+import besmart from "../../Assets/Experiences/besmart.svg";
 
 const experienceData = [
   {
+    imgPath: besmart,
+    title: "Lead AI Engineer at BeSmart.ai",
+    date: "Feb 2026 – present · Saudi Arabia",
+    demoLink: "https://besmart.ai/",
+    description: [
+      "Lead a team of three delivering three generative AI SaaS products from architecture to production release.",
+      "Built a multi-platform content tool that turns a single idea into English and Arabic social posts, with scheduling, image generation, and a per-user knowledge base.",
+      "Designed a synthetic data service that learns a company's private dataset and generates realistic substitutes safe to share or test with.",
+      "Built a no-code platform for embeddable AI chat agents that answer from customer-uploaded documents via Qdrant and reach external tools through MCP servers.",
+      "Own model selection, retrieval design, the API layer, and containerized deployment across all products on Railway.",
+    ],
+  },
+  {
     imgPath: ASPU,
     title: "Teaching Assistant at ASPU - Al Sham Private University",
-    date: "Oct 2025 – present",
+    date: "Oct 2025 – present · Damascus",
     demoLink: "https://www.aspu.edu.sy/site/english/index.php",
     description: [
-      "Teach Machine Learning and Information Retrieval concepts.",
-      "Create tutorial materials and programming examples to support the courses.",
+      "Teach undergraduate Artificial Intelligence, Machine Learning, Information Retrieval, and Multimedia.",
+      "Author tutorial materials, programming assignments, and hands-on coding labs bridging theory to implementation.",
     ],
   },
   {
@@ -32,7 +46,7 @@ const experienceData = [
       "Performed EDA on subscriber activity and revenue data to uncover churn drivers and usage behavior patterns.",
       "Delivered Drip, RFM, Growth, and GEO analyses for MTN Congo.",
       "Built interactive dashboards with Apache Superset for real-time KPI visibility.",
-      "Social Network Analysis pipeline — reduced processing time by 90% via DuckDB migration.",
+      "Built a Social Network Analysis pipeline on large-scale telecom data, reducing processing time by 90% through a PySpark to DuckDB migration.",
       "Collaborated on projects involving Large Language Models (LLMs).",
     ],
   },
@@ -79,7 +93,7 @@ const experienceData = [
   },
   {
     imgPath: ICPC,
-    title: "ICPC — International Collegiate Programming Contest",
+    title: "ICPC International Collegiate Programming Contest",
     date: "Jan 2021 – 2023",
     description: [
       "Ranked 12th in the 2021 Al-Baath University Collegiate Programming Contest.",

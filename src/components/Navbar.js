@@ -4,10 +4,8 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -35,13 +33,18 @@ function NavBar() {
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="md"
+      expand="lg"
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        {/* <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand> */}
+        <Navbar.Brand
+          as={Link}
+          to="/"
+          className="brand-name"
+          onClick={() => updateExpanded(false)}
+        >
+          Yassin <span className="purple">Abdulmahdi</span>
+        </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -131,14 +134,14 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item className="fork-btn">
+            <Nav.Item className="cta-btn">
               <Button
-                href="https://github.com/Yassin522/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
+                as={Link}
+                to="/contact"
+                className="cta-btn-inner"
+                onClick={() => updateExpanded(false)}
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                Hire Me
               </Button>
             </Nav.Item>
           </Nav>

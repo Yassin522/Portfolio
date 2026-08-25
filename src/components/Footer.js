@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaKaggle, FaLinkedinIn, FaMedium } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
@@ -13,7 +13,7 @@ function Footer() {
           <h3>Designed and Developed by Yassin Abdulmahdi</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
+          <h3>Copyright © {year} Yassin Abdulmahdi</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -32,13 +32,38 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/yassin-abdulmahdi/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                aria-label="LinkedIn"
               >
                 <FaLinkedinIn />
               </a>
             </li>
-            
+
+            <li className="social-icons">
+              <a
+                href="https://www.kaggle.com/yassinabdulmahdi"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Kaggle"
+              >
+                <FaKaggle />
+              </a>
+            </li>
+
+            <li className="social-icons">
+              <a
+                href="https://medium.com/@Yassin52"
+                style={{ color: "white" }}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Medium"
+              >
+                <FaMedium />
+              </a>
+            </li>
+
           </ul>
         </Col>
       </Row>
