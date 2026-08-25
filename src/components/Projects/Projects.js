@@ -5,23 +5,10 @@ import Particle from "../Particle";
 import RevealWrapper from "../RevealWrapper";
 import drawing from "../../Assets/Projects/drawing.jpg";
 import jigsaw from "../../Assets/Projects/photo_2023-12-24_10-25-35.jpg";
-import grammar from "../../Assets/Projects/301766776-a0b498e5-5f8e-4fb3-b53d-56f5f15543db.png";
-import ISS from "../../Assets/Projects/cover.jpg";
-import Textclass from "../../Assets/Projects/297351041-3b2721da-2df0-4f2f-a736-a1cf9f3a76d5.jpeg";
 import fluent from "../../Assets/Projects/onboard_2.png";
 import schoolmate from "../../Assets/Projects/teacher mockup_014955.jpg";
-import invoice from "../../Assets/Projects/Free Black Keyboard With Smartphone Mockup.jpg";
 
 const projects = [
-  {
-    imgPath: invoice,
-    title: "Intelligent Invoice Extraction & RAG",
-    description:
-      "End-to-end ETL and RAG pipeline that extracts and structures line-item data from unstructured PDF invoices. Docling handles high-precision table extraction, LanceDB indexes serialized rows for semantic search, and Llama-3 synthesizes grounded answers so users can query invoice details in natural language.",
-    ghLink:
-      "https://github.com/Yassin522/Intelligent-Invoice-Line-Items-Extraction-Retrieval-System",
-    techStack: ["Python", "RAG", "Llama-3", "LanceDB", "Docling"],
-  },
   {
     imgPath: fluent,
     title: "FluentFlow",
@@ -49,30 +36,8 @@ const projects = [
     demoLink: "https://sketchy-ten.vercel.app/",
     techStack: ["Python", "ML", "React", "TensorFlow", "Canvas API"],
   },
-  {
-    imgPath: grammar,
-    title: "English Grammar Error Correction",
-    description:
-      "Grammar error correction built with the T5 model and a custom Encoder-Decoder architecture. Automatically detects and corrects grammatical errors in written English text.",
-    ghLink: "https://github.com/Yassin522/English-Grammar-Error-Correction",
-    techStack: ["Python", "T5", "Transformers", "PyTorch", "NLP"],
-  },
-  {
-    imgPath: Textclass,
-    title: "Arabic Text Classification",
-    description:
-      "Arabic text classification and sequence labeling using Naive Bayes, Logistic Regression, LSTMs, and CNNs, with multiple Arabic NLP datasets included.",
-    ghLink: "https://github.com/Yassin522/Text-Classification-and-Sequence-Labelling",
-    techStack: ["Python", "LSTM", "CNN", "Scikit-learn", "Arabic NLP"],
-  },
-  {
-    imgPath: ISS,
-    title: "Information Security System",
-    description:
-      "Secure communication system between Damascus University and its students/faculty. Client-server architecture over IP/TCP sockets with encryption and identity verification.",
-    ghLink: "https://github.com/Yassin522/ISS",
-    techStack: ["Python", "Sockets", "Cryptography", "TCP/IP"],
-  },
+
+
   {
     imgPath: schoolmate,
     title: "SchoolMate",

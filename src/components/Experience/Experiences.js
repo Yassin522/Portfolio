@@ -11,7 +11,7 @@ import seventh from "../../Assets/Experiences/seventhgeneration.png";
 import rachis from "../../Assets/Experiences/photo_2024-07-01_11-19-54.jpg";
 import tp from "../../Assets/Experiences/truepositive_tech_logo.jpeg";
 import ASPU from "../../Assets/Experiences/ASPU-Logo-1.png";
-import besmart from "../../Assets/Experiences/besmart.svg";
+import besmart from "../../Assets/Experiences/besmart.jpeg";
 
 const experienceData = [
   {

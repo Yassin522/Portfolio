@@ -9,7 +9,8 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const EMAIL = "yasinalmhdi8@gmail.com";
 const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
-const ACCESS_KEY = process.env.REACT_APP_WEB3FORMS_KEY || "";
+const ACCESS_KEY = (process.env.REACT_APP_WEB3FORMS_KEY || "").trim();
+const GENERIC_ERROR = "Something went wrong sending that.";
 
 const EMPTY_FORM = { name: "", email: "", subject: "", message: "" };
 
@@ -32,6 +33,7 @@ function Contact() {
   const [form, setForm] = useState(EMPTY_FORM);
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState("idle"); // idle | sending | success | error
+  const [errorMessage, setErrorMessage] = useState(GENERIC_ERROR);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -52,6 +54,16 @@ function Contact() {
     setErrors(found);
     if (Object.keys(found).length > 0) return;
 
+    // Without a key the API rejects every request, so say so plainly rather
+    // than letting it look like a transient network failure.
+    if (!ACCESS_KEY) {
+      setErrorMessage(
+        "The contact form is not configured yet (missing REACT_APP_WEB3FORMS_KEY)."
+      );
+      setStatus("error");
+      return;
+    }
+
     setStatus("sending");
     try {
       const { data } = await axios.post(
@@ -71,9 +83,12 @@ function Contact() {
         setForm(EMPTY_FORM);
         setStatus("success");
       } else {
+        setErrorMessage((data && data.message) || GENERIC_ERROR);
         setStatus("error");
       }
     } catch (err) {
+      const apiMessage = err.response && err.response.data && err.response.data.message;
+      setErrorMessage(apiMessage || GENERIC_ERROR);
       setStatus("error");
     }
   };
@@ -190,7 +205,7 @@ function Contact() {
 
             {status === "error" && (
               <p className="contact-status contact-status-error">
-                Something went wrong sending that. You can reach me directly at{" "}
+                {errorMessage} You can reach me directly at{" "}
                 <a href={`mailto:${EMAIL}`}>{EMAIL}</a>.
               </p>
             )}
