@@ -1,8 +1,7 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import ExperienceCard from "./ExperienceCards";
-import Particle from "../Particle";
 import RevealWrapper from "../RevealWrapper";
+import Section from "../Section";
 
 import in1minute from "../../Assets/Experiences/1535467604961.jpeg";
 import shai from "../../Assets/Experiences/1652345898144.jpeg";
@@ -16,7 +15,12 @@ import besmart from "../../Assets/Experiences/besmart.jpeg";
 const experienceData = [
   {
     imgPath: besmart,
-    title: "Lead AI Engineer at BeSmart.ai",
+    role: "Lead AI Engineer",
+    title: "BeSmart.ai",
+    summary:
+      "Lead a team of three shipping three generative AI SaaS products end to end, from retrieval design through containerized release.",
+    metrics: [{ value: "3", label: "products shipped" }, { value: "3", label: "engineers led" }],
+    tags: ["LLMs", "RAG", "Qdrant", "MCP", "FastAPI", "Railway"],
     date: "Feb 2026 – present · Saudi Arabia",
     demoLink: "https://besmart.ai/",
     description: [
@@ -29,7 +33,12 @@ const experienceData = [
   },
   {
     imgPath: ASPU,
-    title: "Teaching Assistant at ASPU - Al Sham Private University",
+    role: "Teaching Assistant",
+    title: "Al Sham Private University",
+    summary:
+      "Teach undergraduate AI, Machine Learning, and Information Retrieval, and author the labs that go with them.",
+    metrics: [{ value: "4", label: "courses taught" }],
+    tags: ["Teaching", "AI", "Machine Learning", "Information Retrieval"],
     date: "Oct 2025 – present · Damascus",
     demoLink: "https://www.aspu.edu.sy/site/english/index.php",
     description: [
@@ -39,7 +48,12 @@ const experienceData = [
   },
   {
     imgPath: tp,
-    title: "Data Scientist at TruePositive",
+    role: "Data Scientist",
+    title: "TruePositive",
+    summary:
+      "Churn and growth analytics on multi-million-record telecom data, plus a graph pipeline rebuilt for a 90% speedup.",
+    metrics: [{ value: "90%", label: "faster pipeline" }, { value: "4", label: "analyses delivered" }],
+    tags: ["PySpark", "DuckDB", "Superset", "EDA", "LLMs"],
     date: "Feb 2025 – Sep 2025",
     demoLink: "https://www.linkedin.com/company/truepositive-tech/posts/?feedView=all",
     description: [
@@ -52,7 +66,12 @@ const experienceData = [
   },
   {
     imgPath: rachis,
-    title: "R&D Engineer at Rachis Systems",
+    role: "R&D Engineer",
+    title: "Rachis Systems",
+    summary:
+      "Research work across federated learning, biometrics, and routing optimization.",
+    metrics: [{ value: "98.7%", label: "MNIST accuracy" }],
+    tags: ["Federated Learning", "Differential Privacy", "Meta-Learning"],
     date: "Oct 2024 – Mar 2025",
     demoLink: "https://rachis.co/",
     description: [
@@ -63,7 +82,11 @@ const experienceData = [
   },
   {
     imgPath: seventh,
-    title: "Data Engineer at Seventh Generation Tech",
+    role: "Data Engineer",
+    title: "Seventh Generation Tech",
+    summary:
+      "Built and maintained the scraping pipelines feeding IRANK product data.",
+    tags: ["Selenium", "BeautifulSoup", "Data Cleaning"],
     date: "May 2024 – Aug 2024",
     demoLink: "https://www.seventhgenerationtech.com/",
     description: [
@@ -74,7 +97,11 @@ const experienceData = [
   },
   {
     imgPath: shai,
-    title: "Data Science Intern at SHAI For AI",
+    role: "Data Science Intern",
+    title: "SHAI For AI",
+    summary:
+      "Remote training program in data science principles and statistical modeling.",
+    tags: ["Data Analysis", "Machine Learning", "Statistics"],
     date: "Feb 2023 – Apr 2024",
     demoLink: "https://shaiforai.com/",
     description: [
@@ -84,7 +111,11 @@ const experienceData = [
   },
   {
     imgPath: in1minute,
-    title: "Research Intern at In1Minute",
+    role: "Research Intern",
+    title: "In1Minute",
+    summary:
+      "Collaborative research with an international cohort.",
+    tags: ["Research", "Collaboration"],
     date: "Oct 2022 – Nov 2022",
     description: [
       "Participated in collaborative research with a diverse cohort.",
@@ -93,7 +124,12 @@ const experienceData = [
   },
   {
     imgPath: ICPC,
-    title: "ICPC International Collegiate Programming Contest",
+    role: "Contestant",
+    title: "ICPC Collegiate Programming Contest",
+    summary:
+      "Three years of competitive programming across university and regional contests.",
+    metrics: [{ value: "12th", label: "best rank" }, { value: "3", label: "years competing" }],
+    tags: ["Algorithms", "C++", "Problem Solving"],
     date: "Jan 2021 – 2023",
     description: [
       "Ranked 12th in the 2021 Al-Baath University Collegiate Programming Contest.",
@@ -105,38 +141,32 @@ const experienceData = [
 
 function Experiences() {
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <RevealWrapper>
-          <h1 className="project-heading">
-            My Recent <strong className="purple">Experience</strong>
-          </h1>
-          <p style={{ color: "white" }}>
-            Here are a few companies and roles I've been part of recently.
-          </p>
-        </RevealWrapper>
-
-        <div className="timeline-container">
-          {experienceData.map((exp, index) => {
-            const side = index % 2 === 0 ? "timeline-left" : "timeline-right";
-            return (
-              <RevealWrapper key={index} delay={index * 0.1} className={`timeline-item ${side}`}>
-                <ExperienceCard
-                  imgPath={exp.imgPath}
-                  isBlog={false}
-                  title={exp.title}
-                  description={exp.description}
-                  date={exp.date}
-                  demoLink={exp.demoLink}
-                  ghLink={exp.ghLink}
-                />
-              </RevealWrapper>
-            );
-          })}
-        </div>
-      </Container>
-    </Container>
+    <Section
+      id="experience"
+      kicker="Career"
+      title="Where I have worked"
+      intro="Roles across AI engineering, data science, and teaching. Expand any card for the detail."
+    >
+      <div className="experience-list">
+        {experienceData.map((exp, index) => (
+          <RevealWrapper key={index} delay={index * 0.06}>
+            <ExperienceCard
+              imgPath={exp.imgPath}
+              isBlog={false}
+              role={exp.role}
+              title={exp.title}
+              summary={exp.summary}
+              metrics={exp.metrics}
+              tags={exp.tags}
+              description={exp.description}
+              date={exp.date}
+              demoLink={exp.demoLink}
+              ghLink={exp.ghLink}
+            />
+          </RevealWrapper>
+        ))}
+      </div>
+    </Section>
   );
 }
 

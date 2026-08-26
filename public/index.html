@@ -11,6 +11,11 @@
   <meta name="author" content="Yassin Abdulmahdi">
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="canonical" href="https://yassin-abdulmahdi.vercel.app/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
   <title>Yassin Abdulmahdi | AI Engineer &amp; Data Scientist</title>
 
   <!-- Google / Search Engine Tags -->
@@ -34,6 +39,84 @@
   <meta name="twitter:description"
     content="AI Engineer and Data Scientist. Production LLM systems, RAG pipelines, agent platforms, and applied data science at scale.">
   <meta name="twitter:image" content="https://raw.githubusercontent.com/Yassin522/Portfolio/main/Images/readme-img.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://yassin-abdulmahdi.vercel.app/#person",
+        "name": "Yassin Abdulmahdi",
+        "jobTitle": "AI Engineer & Data Scientist",
+        "description": "AI Engineer and Data Scientist who takes LLM systems from architecture to production: RAG pipelines, agent platforms, and multi-tenant AI SaaS.",
+        "url": "https://yassin-abdulmahdi.vercel.app/",
+        "email": "mailto:yasinalmhdi8@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Damascus",
+          "addressCountry": "SY"
+        },
+        "sameAs": [
+          "https://github.com/Yassin522",
+          "https://www.linkedin.com/in/yassin-abdulmahdi/",
+          "https://www.kaggle.com/yassinabdulmahdi",
+          "https://medium.com/@Yassin52"
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Large Language Models",
+          "Retrieval Augmented Generation",
+          "Machine Learning",
+          "Data Science",
+          "Python",
+          "PyTorch",
+          "FastAPI",
+          "LangChain",
+          "Qdrant",
+          "PySpark",
+          "DuckDB",
+          "Docker"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "BeSmart.ai",
+          "url": "https://besmart.ai/"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Al Sham Private University",
+          "url": "https://www.aspu.edu.sy/"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://yassin-abdulmahdi.vercel.app/#website",
+        "url": "https://yassin-abdulmahdi.vercel.app/",
+        "name": "Yassin Abdulmahdi | AI Engineer & Data Scientist",
+        "description": "Portfolio of Yassin Abdulmahdi, AI Engineer and Data Scientist.",
+        "inLanguage": "en",
+        "about": { "@id": "https://yassin-abdulmahdi.vercel.app/#person" },
+        "author": { "@id": "https://yassin-abdulmahdi.vercel.app/#person" }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    // Applied before first paint so a stored light theme does not flash dark.
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t !== "light" && t !== "dark") {
+          t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        }
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
 </head>
 
 <body>

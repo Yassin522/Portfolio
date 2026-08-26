@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import axios from "axios";
-import Particle from "../Particle";
 import RevealWrapper from "../RevealWrapper";
+import Section from "../Section";
 import { AiFillGithub } from "react-icons/ai";
 import { FaKaggle, FaLinkedinIn, FaMedium } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -96,19 +96,13 @@ function Contact() {
   const sending = status === "sending";
 
   return (
-    <Container fluid className="contact-section">
-      <Particle />
-      <Container style={{ maxWidth: "760px" }}>
-        <RevealWrapper>
-          <h1 className="project-heading">
-            Get In <strong className="purple">Touch</strong>
-          </h1>
-          <p className="contact-intro">
-            Whether it's a role, an AI product you want built, or a research idea
-            worth exploring, send it over and I'll get back to you.
-          </p>
-        </RevealWrapper>
-
+    <Section
+      id="contact"
+      kicker="Contact"
+      title="Get in touch"
+      intro="Whether it's a role, an AI product you want built, or a research idea worth exploring, send it over and I'll get back to you."
+    >
+      <div className="contact-layout">
         <RevealWrapper delay={0.15}>
           <form className="contact-form" onSubmit={handleSubmit} noValidate>
             {/* Web3Forms honeypot: hidden from people, tempting to bots. */}
@@ -212,7 +206,8 @@ function Contact() {
           </form>
         </RevealWrapper>
 
-        <RevealWrapper delay={0.3}>
+        <RevealWrapper delay={0.3} className="contact-aside">
+          <span className="contact-aside-kicker">Direct</span>
           <p className="contact-alt">
             Prefer your own mail client?{" "}
             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
@@ -220,54 +215,54 @@ function Contact() {
 
           <p className="contact-social-label">You can also find me on</p>
           <ul className="contact-social-links">
-            <li className="social-icons">
+            <li>
               <a
                 href="https://github.com/Yassin522"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="GitHub"
-                className="icon-colour home-social-icons"
+                className="icon-button"
               >
                 <AiFillGithub />
               </a>
             </li>
-            <li className="social-icons">
+            <li>
               <a
                 href="https://www.linkedin.com/in/yassin-abdulmahdi/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
-                className="icon-colour home-social-icons"
+                className="icon-button"
               >
                 <FaLinkedinIn />
               </a>
             </li>
-            <li className="social-icons">
+            <li>
               <a
                 href="https://www.kaggle.com/yassinabdulmahdi"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Kaggle"
-                className="icon-colour home-social-icons"
+                className="icon-button"
               >
                 <FaKaggle />
               </a>
             </li>
-            <li className="social-icons">
+            <li>
               <a
                 href="https://medium.com/@Yassin52"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Medium"
-                className="icon-colour home-social-icons"
+                className="icon-button"
               >
                 <FaMedium />
               </a>
             </li>
           </ul>
         </RevealWrapper>
-      </Container>
-    </Container>
+      </div>
+    </Section>
   );
 }
 

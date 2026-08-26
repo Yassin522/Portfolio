@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import RevealWrapper from "../RevealWrapper";
+import Section from "../Section";
 import drawing from "../../Assets/Projects/drawing.jpg";
 import jigsaw from "../../Assets/Projects/photo_2023-12-24_10-25-35.jpg";
 import fluent from "../../Assets/Projects/onboard_2.png";
@@ -12,6 +11,10 @@ const projects = [
   {
     imgPath: fluent,
     title: "FluentFlow",
+    fit: "contain",
+    meta: "AI · Computer Vision",
+    year: "2024",
+    published: true,
     description:
       "Bachelor's Degree Project in AI Engineering. A web app that evaluates public speaking skills across body language, voice modulation, and speech content, providing real-time multi-criteria feedback.",
     ghLink: "https://github.com/Yassin522/Fluent-Flow",
@@ -21,6 +24,9 @@ const projects = [
   {
     imgPath: jigsaw,
     title: "Jigsaw Genius",
+    fit: "contain",
+    meta: "Computer Vision",
+    year: "2023",
     description:
       "Solves jigsaw and grid puzzles using computer vision. Users upload puzzle images and receive accurate solutions; hint images can be provided for complex puzzles.",
     ghLink: "https://github.com/Yassin522/jigsaw-genius",
@@ -30,6 +36,10 @@ const projects = [
   {
     imgPath: drawing,
     title: "Sketchy",
+    fit: "cover",
+    meta: "Machine Learning",
+    year: "2023",
+    published: true,
     description:
       "Interactive web application for drawing education aimed at children. Uses machine learning to predict and assist drawing, providing real-time feedback to develop artistic skills.",
     ghLink: "https://github.com/Yassin522/Sketchy",
@@ -41,6 +51,9 @@ const projects = [
   {
     imgPath: schoolmate,
     title: "SchoolMate",
+    fit: "cover",
+    meta: "Mobile · Flutter",
+    year: "2022",
     description:
       "Flutter mobile app for students, teachers, and parents with a web dashboard for school administrators. Covers four roles: Student, Teacher, Manager, and Parent.",
     ghLink: "https://github.com/Yassin522/SchoolMate-Dashboard",
@@ -51,36 +64,32 @@ const projects = [
 
 function Projects() {
   return (
-    <Container fluid className="project-section">
-      <Particle />
-      <Container>
-        <RevealWrapper>
-          <h1 className="project-heading">
-            My Recent <strong className="purple">Works</strong>
-          </h1>
-          <p style={{ color: "white" }}>
-            Here are a few projects I've worked on recently.
-          </p>
-        </RevealWrapper>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {projects.map((proj, index) => (
-            <Col md={4} className="project-card" key={index}>
-              <RevealWrapper delay={index * 0.08}>
-                <ProjectCard
-                  imgPath={proj.imgPath}
-                  isBlog={false}
-                  title={proj.title}
-                  description={proj.description}
-                  ghLink={proj.ghLink}
-                  demoLink={proj.demoLink}
-                  techStack={proj.techStack}
-                />
-              </RevealWrapper>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </Container>
+    <Section
+      id="projects"
+      kicker="Selected work"
+      title="Things I have built"
+      intro="A few projects that show how I take an idea from model to shipped product."
+    >
+      <div className="project-grid">
+        {projects.map((proj, index) => (
+          <RevealWrapper key={index} delay={index * 0.08}>
+            <ProjectCard
+              imgPath={proj.imgPath}
+              isBlog={false}
+              title={proj.title}
+              description={proj.description}
+              ghLink={proj.ghLink}
+              demoLink={proj.demoLink}
+              techStack={proj.techStack}
+              meta={proj.meta}
+              year={proj.year}
+              published={proj.published}
+              fit={proj.fit}
+            />
+          </RevealWrapper>
+        ))}
+      </div>
+    </Section>
   );
 }
 

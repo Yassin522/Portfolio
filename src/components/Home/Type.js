@@ -1,19 +1,21 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 
+// The headline already says "AI Engineer", so this line names the work rather
+// than repeating the title.
 function Type() {
   return (
     <Typewriter
       options={{
         strings: [
-          "AI Engineer",
-          "LLM & RAG Systems",
-          "Data Scientist",
-          "Building AI products end to end",
+          "LLM & RAG systems",
+          "Agent platforms",
+          "Data science at scale",
+          "Production ML",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 40,
       }}
     />
   );

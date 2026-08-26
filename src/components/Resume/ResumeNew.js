@@ -1,70 +1,54 @@
-import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
+import React from "react";
+import Section from "../Section";
+import RevealWrapper from "../RevealWrapper";
 import pdf from "../../Assets/Yassin-Abdulmahdi.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { BsFileEarmarkPdf, BsArrowUpRight } from "react-icons/bs";
 
-// Pin the worker to the exact pdfjs build react-pdf ships with, so a version
-// bump can't leave us pointing at a CDN path that 404s.
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
-
-function DownloadButton() {
-  return (
-    <Button
-      variant="primary"
-      href={pdf}
-      download="Yassin-Abdulmahdi.pdf"
-      style={{ maxWidth: "250px" }}
-    >
-      <AiOutlineDownload />
-      &nbsp;Download CV
-    </Button>
-  );
-}
-
+// The CV is no longer rendered inline: react-pdf pulled a worker and a whole
+// PDF renderer into the bundle to show a document most visitors would rather
+// open in their own viewer. Two links instead — open in a new tab, or download.
 function ResumeNew() {
-  const [width, setWidth] = useState(
-    typeof window === "undefined" ? 1200 : window.innerWidth
-  );
-  const [numPages, setNumPages] = useState(null);
-
-  useEffect(() => {
-    const onResize = () => setWidth(window.innerWidth);
-    onResize();
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
-
-  const scale = width > 786 ? 1.7 : 0.6;
-
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Particle />
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <DownloadButton />
-        </Row>
+    <Section
+      id="resume"
+      kicker="Resume"
+      title="My CV"
+      intro="Open the full document in a new tab, or grab a copy to keep."
+    >
+      <RevealWrapper>
+        <div className="resume-card">
+          <span className="resume-icon">
+            <BsFileEarmarkPdf />
+          </span>
 
-        <Row className="resume">
-          <Document
-            file={pdf}
-            className="d-flex flex-column align-items-center"
-            onLoadSuccess={({ numPages: total }) => setNumPages(total)}
-          >
-            {Array.from({ length: numPages || 0 }, (_, index) => (
-              <Page key={index} pageNumber={index + 1} scale={scale} />
-            ))}
-          </Document>
-        </Row>
+          <div className="resume-card-body">
+            <p className="resume-card-title">Yassin Abdulmahdi — CV</p>
+            <p className="resume-card-note">
+              AI Engineer &amp; Data Scientist · PDF
+            </p>
+          </div>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <DownloadButton />
-        </Row>
-      </Container>
-    </div>
+          <div className="resume-actions">
+            <a
+              href={pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gradient-button"
+            >
+              View CV <BsArrowUpRight style={{ marginLeft: 6 }} />
+            </a>
+            <a
+              href={pdf}
+              download="Yassin-Abdulmahdi.pdf"
+              className="ghost-button"
+            >
+              <AiOutlineDownload style={{ marginRight: 6 }} /> Download
+            </a>
+          </div>
+        </div>
+      </RevealWrapper>
+    </Section>
   );
 }
 
