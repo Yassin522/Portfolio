@@ -14,7 +14,12 @@ function useScrollReveal(threshold = 0.15) {
           observer.unobserve(el);
         }
       },
-      { threshold }
+      // A ratio threshold penalises elements taller than the viewport: 15% of a
+      // very tall box may never be on screen, so it reveals late (or not at all)
+      // while a short neighbour in the same row has already settled. Pairing the
+      // ratio with a 0 threshold and a bottom rootMargin means "15% visible, OR
+      // scrolled meaningfully into view" — tall and short siblings reveal together.
+      { threshold: [0, threshold], rootMargin: "0px 0px -12% 0px" }
     );
 
     observer.observe(el);

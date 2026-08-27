@@ -206,7 +206,7 @@ function Contact() {
           </form>
         </RevealWrapper>
 
-        <RevealWrapper delay={0.3} className="contact-aside">
+        <RevealWrapper delay={0.15} className="contact-aside">
           <span className="contact-aside-kicker">Direct</span>
           <p className="contact-alt">
             Prefer your own mail client?{" "}

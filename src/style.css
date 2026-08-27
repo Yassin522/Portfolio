@@ -1373,25 +1373,8 @@ html[data-theme="light"] .availability {
   line-height: 1.6;
   color: var(--text-secondary);
 }
-/* Scaffolded entries: dashed border + chip so an unfilled slot reads clearly
-   as a TODO rather than as a real credential. */
-.credential-panel.is-placeholder,
-.certificate-card.is-placeholder,
-.organization-card.is-placeholder {
-  border-style: dashed;
-  opacity: 0.65;
-}
-.placeholder-chip {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 3px 9px;
-  border-radius: 999px;
-  background: rgba(255, 193, 7, 0.16);
-  border: 1px solid rgba(255, 193, 7, 0.4);
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  color: #ffc107;
-}
+
+
 /* ============================================================
    Layout system
    1180px shell, 28px gutters, 116px vertical rhythm.
@@ -2397,12 +2380,32 @@ a.case-link,
 /* --- Contact fixes --- */
 /* The aside is much shorter than the form; keeping it top-aligned left a large
    dead area, so it sticks alongside the form instead. */
-.contact-aside {
-  position: sticky;
-  top: 96px;
+/* The grid children are RevealWrapper divs, so the sticky/alignment has to sit
+   on the wrapper. Putting it on the inner .contact-aside did nothing. */
+.contact-layout > .reveal {
+  align-self: start;
+  min-width: 0;
+}
+
+/* Both boxes sit flush at the top of the row; no sticky offset. */
+.contact-layout > .reveal:last-child {
+  position: static;
 }
 .contact-aside .contact-alt {
   margin: 0 0 6px;
+}
+
+.contact-aside .contact-alt a,
+.contact-status a {
+  color: var(--imp-text-color);
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-aside .contact-alt a:hover,
+.contact-status a:hover {
+  color: var(--imp-text-color);
+  text-decoration: underline;
 }
 .contact-aside .contact-social-label {
   margin: 20px 0 12px;
@@ -2424,11 +2427,6 @@ a.case-link,
 }
 .contact-layout .contact-field textarea {
   min-height: 120px;
-}
-@media (max-width: 991px) {
-  .contact-aside {
-    position: static;
-  }
 }
 /* ============================================================
    Footer
@@ -2643,9 +2641,31 @@ html[data-theme="light"] .cta-btn-inner {
   color: #fff !important;
 }
 
-/* Placeholder chip needs a darker amber to stay readable. */
-html[data-theme="light"] .placeholder-chip {
-  background: rgba(180, 83, 9, 0.12);
-  border-color: rgba(180, 83, 9, 0.4);
-  color: #b45309;
+
+
+/* --- Credential ID --- */
+.credential-id {
+  margin: 12px 0 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.credential-id code {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+  background: var(--bg-surface-strong);
+  border: 1px solid var(--border-soft);
+  border-radius: 5px;
+  padding: 1px 6px;
+  margin-left: 3px;
+}
+
+html[data-theme="light"] .credential-id code {
+  background: #f5f1fd;
+}
+
+/* --- Organization external link --- */
+.organization-link {
+  margin-top: 14px;
 }
