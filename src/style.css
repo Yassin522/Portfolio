@@ -1384,7 +1384,7 @@ html[data-theme="light"] .availability {
   border: 1px solid var(--border-soft);
   object-fit: cover;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .organization-card-body {
     flex-direction: column;
     align-items: stretch;
@@ -1393,6 +1393,7 @@ html[data-theme="light"] .availability {
   .organization-media {
     width: 100%;
     max-width: none;
+    aspect-ratio: 16 / 9;
     order: -1;
   }
 }
@@ -2196,20 +2197,18 @@ a.case-link,
    ============================================================ */
 .contact-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(270px, 0.55fr);
-  gap: 20px;
+  grid-template-columns: minmax(0, 1fr) clamp(260px, 26%, 320px);
+  gap: 24px;
   margin-top: 48px;
-  align-items: stretch;
+  align-items: start;
 }
 .contact-layout .contact-form {
-  height: 100%;
   padding: 26px;
   border: 1px solid var(--border-soft);
   border-radius: 20px;
   background: var(--bg-surface);
 }
 .contact-aside {
-  height: 100%;
   padding: 26px;
   border: 1px solid var(--border-soft);
   border-radius: 20px;
@@ -2333,6 +2332,7 @@ a.case-link,
 }
 .timeline-date-chip {
   display: inline-block;
+  white-space: nowrap;
   padding: 4px 11px;
   border: 1px solid var(--border-soft);
   border-radius: 999px;
@@ -2423,11 +2423,12 @@ a.case-link,
   transform: scale(1.03);
 }
 /* --- Contact fixes --- */
-/* The aside is much shorter than the form; keeping it top-aligned left a large
-   dead area, so it sticks alongside the form instead. */
-/* The grid children are RevealWrapper divs, so the sticky/alignment has to sit
-   on the wrapper. Putting it on the inner .contact-aside did nothing. */
+/* The aside holds far less than the form, so it is sized to its content and
+   top-aligned rather than stretched to match the form's height. */
+/* The grid children are RevealWrapper divs, so the alignment has to sit on the
+   wrapper. Putting it on the inner .contact-aside did nothing. */
 .contact-layout > .reveal {
+  align-self: start;
   min-width: 0;
 }
 
