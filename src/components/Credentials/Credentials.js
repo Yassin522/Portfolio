@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaGraduationCap, FaCertificate, FaUsers } from "react-icons/fa";
-import { BsBoxArrowUpRight } from "react-icons/bs";
+import { BsBoxArrowUpRight, BsChevronDown } from "react-icons/bs";
 import RevealWrapper from "../RevealWrapper";
 import Section from "../Section";
+
+import icpc from "../../Assets/Organizations/1655632229271.jpeg";
+import studyCorner from "../../Assets/Organizations/1673608469769.jpeg";
+import rbcs from "../../Assets/Organizations/1718564866224.jpeg";
+import syriaDataScience from "../../Assets/Organizations/1751184209469.jpeg";
 
 const EDUCATION = [
   {
@@ -41,6 +46,16 @@ const CERTIFICATES = [
 
 const ORGANIZATIONS = [
   {
+    imgPath: syriaDataScience,
+    name: "Syria Data Science",
+    role: "Community Member",
+    contributions: [
+      "Part of an inclusive community advancing data science and analytics in Syria, connecting practitioners, researchers, and newcomers.",
+      "Supports knowledge-sharing, mentorship, and community-led initiatives that equip people with data skills for real-world problems.",
+    ],
+  },
+  {
+    imgPath: icpc,
     name: "ICPC International Collegiate Programming Contest",
     role: "Contestant",
     date: "2021 – 2023",
@@ -52,15 +67,23 @@ const ORGANIZATIONS = [
     ],
   },
   {
+    imgPath: studyCorner,
+    name: "Study Corner Project — Damascus University",
+    role: "Volunteer Lecturer",
+    contributions: [
+      "Taught programming and the Flutter framework to third-year students as part of a volunteer initiative offering supplementary lectures.",
+      "Supported students with the resources and mentoring they needed to progress toward their academic goals.",
+    ],
+  },
+  {
+    imgPath: rbcs,
     name: "RBCs Team فريق الكريات الحمراء",
     role: "Tutor (Volunteer)",
     date: "Feb 2021 – Feb 2023",
     contributions: [
-      "Delivered a lecture on programming languages to third-year students at Damascus University, focusing on the Flutter framework and integrating front-end and back-end components.",
-      "Contributed to the growth and development of Syrian society and university students by providing high-quality educational materials, both online and offline.",
-      "Actively participated in the Screen It3 project, aimed at assisting secondary education students in selecting suitable university specializations.",
-      "Delivered engaging lectures as part of Screen It3, providing students with theoretical and practical insights to help them make informed decisions about their academic futures.",
-      "Empowered and guided students through comprehensive curriculum and practical advice, enhancing their educational experience and future prospects.",
+      "Lectured third-year Damascus University students on programming and the Flutter framework, covering front-end and back-end integration.",
+      "Produced online and offline educational material for Syrian university students.",
+      "Contributed to Screen It3, guiding secondary students toward suitable university specializations through lectures and practical advice.",
     ],
   },
   {
@@ -68,15 +91,22 @@ const ORGANIZATIONS = [
     role: "Data Scientist (Volunteer)",
     date: "May 2023 – Dec 2023",
     contributions: [
-      "Analyzing Brain Scan Images for the Early Detection and Diagnosis of Alzheimer's Disease: developed a machine learning model to identify patterns in brain scans for early detection.",
-      "Focused on achieving high accuracy, efficient processing, and a user-friendly deployment approach to improve diagnosis and patient outcomes.",
-      "Building a Conversational AI for Alternative Transportation in France: volunteered with Omdena Ile-de-France to tackle transportation disruption challenges in the region.",
-      "Developed a conversational AI chatbot providing citizens with real-time, personalized information on alternative transport options during strikes, improving decision-making during disruptions.",
+      "Built a machine learning model to detect Alzheimer's patterns in brain scans, tuned for accuracy, efficient processing, and practical deployment.",
+      "Developed a conversational AI chatbot with Omdena Ile-de-France giving citizens real-time guidance on alternative transport during strikes.",
     ],
   },
 ];
 
+const ORGANIZATIONS_PREVIEW_COUNT = 3;
+
 function Credentials() {
+  const [showAllOrganizations, setShowAllOrganizations] = useState(false);
+  const visibleOrganizations = showAllOrganizations
+    ? ORGANIZATIONS
+    : ORGANIZATIONS.slice(0, ORGANIZATIONS_PREVIEW_COUNT);
+  const hiddenOrganizationCount =
+    ORGANIZATIONS.length - ORGANIZATIONS_PREVIEW_COUNT;
+
   return (
     <Section
       id="credentials"
@@ -141,45 +171,78 @@ function Credentials() {
         {/* Organizations */}
         <RevealWrapper>
           <h2 className="panel-heading">
-            <FaUsers className="panel-heading-icon" /> Organizations
+            <FaUsers className="panel-heading-icon" /> Organizations & Activities
           </h2>
         </RevealWrapper>
         <div className="organization-list">
-          {ORGANIZATIONS.map((item, i) => (
+          {visibleOrganizations.map((item, i) => (
             <RevealWrapper key={item.name + i} delay={i * 0.08}>
               <div
-                className="organization-card"
+                className={`organization-card${
+                  item.imgPath ? " organization-card-with-media" : ""
+                }`}
               >
-                <div className="organization-card-top">
-                  <div>
-                    <p className="credential-title">{item.name}</p>
-                    <p className="credential-org">{item.role}</p>
+                <div className="organization-card-body">
+                  <div className="organization-card-main">
+                    <div className="organization-card-top">
+                      <div>
+                        <p className="credential-title">{item.name}</p>
+                        <p className="credential-org">{item.role}</p>
+                      </div>
+                      {item.date && (
+                        <span className="timeline-date-chip">{item.date}</span>
+                      )}
+                    </div>
+                    {item.contributions && (
+                      <ul className="organization-contributions">
+                        {item.contributions.map((c, ci) => (
+                          <li key={ci}>{c}</li>
+                        ))}
+                      </ul>
+                    )}
+                    {item.link && (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="case-link organization-link"
+                      >
+                        <BsBoxArrowUpRight /> {item.linkLabel || "View profile"}
+                      </a>
+                    )}
                   </div>
-                  {item.date && (
-                    <span className="timeline-date-chip">{item.date}</span>
+                  {item.imgPath && (
+                    <img
+                      className="organization-media"
+                      src={item.imgPath}
+                      alt={item.name}
+                      loading="lazy"
+                    />
                   )}
                 </div>
-                {item.contributions && (
-                  <ul className="organization-contributions">
-                    {item.contributions.map((c, ci) => (
-                      <li key={ci}>{c}</li>
-                    ))}
-                  </ul>
-                )}
-                {item.link && (
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="case-link organization-link"
-                  >
-                    <BsBoxArrowUpRight /> {item.linkLabel || "View profile"}
-                  </a>
-                )}
               </div>
             </RevealWrapper>
           ))}
         </div>
+        {hiddenOrganizationCount > 0 && (
+          <div className="organization-toggle-wrap">
+            <button
+              type="button"
+              className="organization-toggle"
+              onClick={() => setShowAllOrganizations((prev) => !prev)}
+              aria-expanded={showAllOrganizations}
+            >
+              {showAllOrganizations
+                ? "Show less"
+                : `Show ${hiddenOrganizationCount} more`}
+              <BsChevronDown
+                className={`organization-toggle-icon${
+                  showAllOrganizations ? " is-open" : ""
+                }`}
+              />
+            </button>
+          </div>
+        )}
     </Section>
   );
 }

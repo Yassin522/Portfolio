@@ -5,7 +5,6 @@ import Section from "../Section";
 
 import in1minute from "../../Assets/Experiences/1535467604961.jpeg";
 import shai from "../../Assets/Experiences/1652345898144.jpeg";
-import ICPC from "../../Assets/Experiences/p4755.jpg";
 import seventh from "../../Assets/Experiences/seventhgeneration.png";
 import rachis from "../../Assets/Experiences/photo_2024-07-01_11-19-54.jpg";
 import tp from "../../Assets/Experiences/truepositive_tech_logo.jpeg";
@@ -120,21 +119,6 @@ const experienceData = [
     description: [
       "Participated in collaborative research with a diverse cohort.",
       "Gained insights from professionals across various backgrounds.",
-    ],
-  },
-  {
-    imgPath: ICPC,
-    role: "Contestant",
-    title: "ICPC Collegiate Programming Contest",
-    summary:
-      "Three years of competitive programming across university and regional contests.",
-    metrics: [{ value: "12th", label: "best rank" }, { value: "3", label: "years competing" }],
-    tags: ["Algorithms", "C++", "Problem Solving"],
-    date: "Jan 2021 – 2023",
-    description: [
-      "Ranked 12th in the 2021 Al-Baath University Collegiate Programming Contest.",
-      "Ranked 19th in the 2022 ICPC Damascus University Collegiate Programming Contest.",
-      "146th place (of 400+) in The 2021 ACPC Kickoff Online Individual Contest.",
     ],
   },
 ];

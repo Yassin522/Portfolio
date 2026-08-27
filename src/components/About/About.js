@@ -1,7 +1,6 @@
 import React from "react";
 import Section from "../Section";
 import RevealWrapper from "../RevealWrapper";
-import Github from "./Github";
 import laptopImg from "../../Assets/-2147483648_-220529.jpg";
 
 // Skills grouped by what they're used for, rather than a flat wall of logos.
@@ -82,8 +81,6 @@ function About() {
           </RevealWrapper>
         ))}
       </div>
-
-      <Github />
     </Section>
   );
 }
